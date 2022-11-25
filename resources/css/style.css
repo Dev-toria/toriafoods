@@ -1,0 +1,633 @@
+/*......begin styling........*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+html{
+    font-weight: 300;
+    font-size: 25px;
+    background-color: white;
+    color: rgb(168, 159, 159);
+    font-family: 'lato','arial',sans-serif;
+    text-rendering: optimizeLegibility;
+   
+}
+
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) ,url(images/istockphoto-1309290665-612x612.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+
+.name{
+    float: left;
+    margin-left: 70px;
+    margin-top: 30px;
+    color: white;
+    font-size: 55px;
+    font-family: 'lato';
+    font-weight: 400;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 70px;
+
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-right:20px;
+    
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 70%;
+    font-family: 'lato';
+    border-bottom: 2.5px solid transparent;
+    padding:8px 0;
+    font-weight: 300;
+
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2.5px solid rgb(0, 255, 0); 
+    color:  white;
+
+}
+
+.header-text{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 40%;
+   transform: translate(-40%,  -50%);
+   
+}
+
+.header-text .maxi-text{
+    color: white;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 300;
+    text-align:center;
+   letter-spacing: 2px;
+   word-spacing: 3px;
+   font-family: 'lato','arial',sans-serif;
+   margin: 0;
+   padding-top:120px;
+}
+
+
+.header-text .maxi-text:after{
+    display: block;
+    height:2px;
+    width: 450px;
+    background-color:rgb(0, 255, 0);
+    content:" ";
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: auto;
+}
+
+
+
+.btn-text{
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid  ;
+    border-radius:100px ;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 300;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-left: 42%;
+    
+}
+
+.btn-text:link,
+.btn-text:visited{
+    border: 2px solid;
+    border-radius: 100px;
+    color:white;
+}
+
+.btn-text:hover,
+.btn-text:active{
+    border: 2px solid rgb(0, 255, 0);
+    background-color: rgb(0, 255, 0);
+    color: white;
+}
+
+section{
+    padding:80px 0;
+
+}
+ 
+.mini-text{
+     text-align: center;
+     font-size: 150%;
+     color:rgb(73, 69, 69);
+     word-spacing: 2px;
+     padding-bottom: 40px;
+}
+
+
+.mini-text::before{
+    display: block;
+    height:2px;
+    width: 100px;
+    background-color:rgb(0, 255, 0);
+    content:" ";
+    margin: auto;
+    margin-bottom: 5px;
+    
+
+}
+
+.mini-text::after{
+    display: block;
+    height:2px;
+    width: 100px;
+    background-color:rgb(0, 255, 0);
+    content:" ";
+    margin: auto;
+    margin-top: 5px;
+    
+} 
+
+.image{
+    height: 100%;
+    width:100% ;
+    
+}
+
+.text-box h2{
+    color: rgb(73, 69, 69);
+    font-size: 20px;
+    word-spacing: 1px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+
+}
+.text-box h1{
+    color: rgb(73, 69, 69);
+    font-size: 42px;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    
+}
+
+.text-box p{
+    color: rgb(73, 69, 69);
+    margin-top: 30px;
+    font-size: 80%;
+    letter-spacing: 0.9px;
+    word-spacing: 1px;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+.box{
+    padding:1% ;
+}
+
+.btn-menu{
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(73, 69, 69) ;
+    text-transform: uppercase;
+    font-size: 70%;
+    margin-left: 20px;
+    margin-top: 30px;
+    border: 4px solid rgb(73, 69, 69);
+    padding: 8px 8px;
+    font-weight: 700;
+    background-color: white;
+}
+
+.btn-menu:hover,
+.btn-menu:active{
+    color: white;
+    background-color: rgb(73, 69, 69);
+}
+.micro-text{
+    font-size: 20px;
+    color:rgb(73, 69, 69) ;
+    padding-top: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.text{
+    font-size: 80%;
+    color:rgb(73, 69, 69);
+    padding-top: 10px;
+    line-height: 150%;
+    word-spacing: 1px;
+    letter-spacing: 0.9px;
+    font-weight: 400;
+}
+
+.text::after{
+    display: block;
+    height: 1px;
+    width: 45px;
+    content: " ";
+    background-color:rgb(0, 255, 0) ;
+    margin-top: 20px;
+}
+/*.................................
+..........ABOUT US...............
+...............................*/
+
+.about-us{
+    padding-top: 60px;
+
+}
+
+/*.................................
+..........ABOUT US COLUMN TWO...............
+...............................*/
+#box1{
+    background-image: linear-gradient(rgba(0, 0, 0, 7),rgba(0, 0, 0, 0.6)),url(images/istockphoto-1214416414-612x612.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 244px;
+    margin-top: 72px;
+    margin-left: 0;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+#box1 h4{
+   padding-top: 40px;
+   text-transform: uppercase;
+   word-spacing: 1px;
+   letter-spacing: 5px;
+   font-size:25px ;
+}
+#box1 p{
+    padding-top: 15px;
+    font-size: 18px;
+    line-height:150%;
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+#box2{
+    margin-left: 0;
+}
+
+.btn-book{
+    display: inline block;
+    color: white;
+    border: 1px solid white ;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+    font-weight: 400;
+    
+    
+}
+/*.................................
+..........SPECIAL DISHES...............
+...............................*/
+
+.box3 img{
+    width: 100%;
+    height: auto;  
+}
+
+
+/*.................................
+..........THE MENU...............
+...............................*/
+.mini-p{
+    text-align: center;
+    font-size: 80%;
+    color:rgb(73, 69, 69);
+    padding-top: 10px;
+    line-height: 150%;
+    word-spacing: 1px;
+    letter-spacing: 0.9px;
+    font-weight: 400;
+}
+/*......for the menu in the middle.....*/
+.mini-nav{
+    list-style: none;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.mini-nav li{
+    display: inline-block;
+    margin-right: 45px;
+
+}
+
+.mini-nav li a{
+    text-decoration: none;
+    font-size: 70%;
+    color:rgb(73, 69, 69);
+    font-weight: 600;
+    text-transform: uppercase;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+.mini-nav .all{
+    border-bottom: 3px solid rgb(0, 255, 0);
+    padding-bottom: 5px;
+}
+.menu-section{
+    padding: 0;
+}
+.menu-showcase{
+    list-style: none;
+    width: 100%;
+    margin-top: 70px;
+   
+}
+.menu-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    
+}
+.meal-photo img{
+    width:100% ;
+    height: auto;
+    transform: scale(1.15); 
+   
+}
+/*.................................
+..........RESERVATION...............
+...............................*/
+
+/*.......forms........*/
+.contact-form{
+    width: 75%;
+    margin: 50px auto;
+
+}
+input[type=text],
+input[type=datetime],
+select[name=people],
+select[name=time] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    color:rgb(73, 69, 69);
+    font-size: 70%;
+    
+}
+.form1{
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+input[type=submit] {
+    border-radius: 5px;
+    width: 30%;
+    padding: 10px;
+    font-size: 80%;
+    color: white;
+    background-color: rgb(73, 69, 69);
+    border: 2px solid;
+    margin: 20px 50px;
+  
+}
+.background-picture{
+    padding: 0px;
+}
+.background-picture figure img{
+    width: 60%;
+    margin-left:150px;
+    margin-top: 10px; 
+}
+
+/*.................................
+..........OUR SERVICES...............
+...............................*/
+.section-features3{
+    padding: 0;
+
+}
+.text1{
+   margin-top: 20px;
+   font-size: 70%;
+   color:rgb(73, 69, 69);
+   text-align: center;
+    line-height: 150%;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    font-weight: 400;
+
+}
+
+.text1::after{
+    display: block;
+    height: 1px;
+    width: 45px;
+    content: " ";
+    background-color:rgb(0, 255, 0) ;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+.micro-text1{
+    font-size: 20px;
+    color:rgb(73, 69, 69) ;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 50px;
+    text-align: center;
+    
+}
+.box4{
+    padding: 20px;
+    
+}
+/*.................................
+..........iCON BIG...............
+...............................*/
+.icon-big{
+    font-size: 350%;
+    color:rgb(73, 69, 69);
+    display:inline-block;
+    text-align: center;
+    padding: 35px;
+    border-radius: 50%;
+    margin-left: 50px;
+    border: 2px solid rgb(182, 178, 178);
+}
+/*.................................
+..........upcoming event...............
+...............................*/
+.box5 img{
+    width: 100%;
+    height: auto;  
+}
+
+.text2{
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: rgb(97, 91, 91);
+}
+
+.btn-blog{
+    display: inline-block;
+    /*margin-left: 470px;*/
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    margin-left: 42%;
+    margin-right: 42%;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+.section-features5{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.658),rgb(0, 0, 0)),url(images/6.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transform:scale(0.85);
+    padding: 0%;
+    
+}
+.maxi-text{
+    color:white;
+    text-align:left;
+    font-family:"lato";
+    font-size:35px;
+    font-weight:400;
+    text-transform: uppercase;
+    margin-left: 700px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+  
+.text3{
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    margin-left: 700px;
+    letter-spacing: 1.5px;
+    word-spacing: 1px;
+    line-height: 140%;
+}
+.text4{
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    margin-left: 700px;
+    letter-spacing: 1.5px;
+    word-spacing: 1px;
+    line-height: 140%;
+    padding-top: 15px;
+}
+
+.btn-reserve{
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid  ;
+    border-radius: 2px;
+    padding: 8px 8px;
+    color: white;
+    font-size: 20px;
+    margin-left: 800px;
+    margin-top:6px;
+}
+  
+
+ /*........customer testimonial........
+ ......................................*/
+ blockquote{
+    font-size: 19px;
+    position: relative;
+    padding-top: 25px;
+    padding-right: 25px;
+    color: rgb(97, 91, 91);
+    line-height: 140%;
+ }  
+    
+.cus img{
+    height: 100px;
+    border-radius: 50px;
+    margin-left: 100px;
+    
+}
+
+.icon-small{
+    color: rgb(0, 255, 0);
+    display: inline-block;
+    font-size: 70%;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+h5{
+    color:  rgb(97, 91, 91); 
+    text-align: center;
+    padding-top: 20px;
+   margin-right: 90px;
+   font-weight: 400;
+}
+
+/*.................................
+..........ICON-CONTACT................
+...............................*/
+
+.iconcontact{
+    font-size: 80px;
+    color: rgb(73, 69, 69) ;
+    margin-left: 150px;
+    font-weight: 300;
+   
+   
+}    
+
+.text-style{
+    font-size: 22px;
+    margin-left: 100px;
+    padding-top: 30px;
+    color:rgb(73, 69, 69) ;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style:italic;
+    font-stretch:normal;
+    font-family:'lato','arial' sans-serif ;
+
+   
+    
+}
+
